@@ -2,6 +2,7 @@ import './App.css'
 import { useCatImage } from './hooks/useCatImage.js'
 import { useCatFact } from './hooks/useCatFact.js'
 
+
 export function App () {
   const { fact, refreshFact } = useCatFact()
   const { imageUrl } = useCatImage({ fact })
@@ -21,4 +22,3 @@ export function App () {
     </main>
   )
 }
-
